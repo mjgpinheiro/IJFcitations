@@ -1,0 +1,155 @@
+\documentclass[11pt,a4paper]{elsarticle} %review=doublespace preprint=single 5p=2 column
+%%% Begin My package additions %%%%%%%%%%%%%%%%%%%
+\usepackage[hyphens]{url}
+
+  \journal{International Journal of Forecasting} % Sets Journal name
+
+
+\usepackage{lineno} % add
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\bibliographystyle{elsarticle-harv}
+\biboptions{sort&compress} % For natbib
+\usepackage{graphicx}
+\usepackage{booktabs} % book-quality tables
+%%%%%%%%%%%%%%%% end my additions to header
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{graphicx}
+% We will generate all images so they have a width \maxwidth. This means
+% that they will get their normal width if they fit onto the page, but
+% are scaled down if they would overflow the margins.
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+\else\Gin@nat@width\fi}
+\makeatother
+\let\Oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={Title of the paper},
+            colorlinks=false,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+\setcounter{secnumdepth}{5}
+% Pandoc toggle for numbering sections (defaults to be off)
+% Pandoc header
+%% FONT and LAYOUT
+\usepackage{mathpazo}
+\usepackage{parskip}
+
+%% CAPTIONS
+\usepackage{caption}
+\DeclareCaptionStyle{italic}[justification=centering]
+ {labelfont={bf},textfont={it},labelsep=colon}
+\captionsetup[figure]{style=italic,format=hang,singlelinecheck=true}
+\captionsetup[table]{style=italic,format=hang,singlelinecheck=true}
+
+%% MATHS
+\usepackage{bm}
+\allowdisplaybreaks
+
+%% GRAPHICS
+\usepackage[section]{placeins}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.7}
+
+
+
+\begin{document}
+\begin{frontmatter}
+
+  \title{Title of the paper}
+    \author[nau]{Dejian Yu\corref{c1}}
+   \ead{yudejian62@126.com} 
+   \cortext[c1]{Corresponding Author}
+    \author[monash]{Rob J Hyndman}
+   \ead{Rob.Hyndman@monash.edu} 
+  
+      \address[nau]{Nanjing Audit University, China}
+    \address[monash]{Department of Econometrics \& Business Statistics, Clayton, VIC 3800,
+Australia}
+  
+  \begin{abstract}
+  This is the abstract.
+  
+  It consists of two paragraphs.
+  \end{abstract}
+   \begin{keyword} citations, forecasting\end{keyword}
+ \end{frontmatter}
+
+\hypertarget{intro}{%
+\section{Introduction}\label{intro}}
+
+A sample graph is shown in Figure \ref{fig:graphs}. \newpage
+
+\begin{figure}
+\centering
+\includegraphics{IJFcitations_files/figure-latex/graphs-1.pdf}
+\caption{\label{fig:graphs}The ubiquitous mtcars data used yet again.}
+\end{figure}
+
+This is the end of Section \ref{intro}.
+
+\hypertarget{literature-review}{%
+\section{Literature review}\label{literature-review}}
+
+Here are two sample references: Feynman and Vernon Jr. (1963)
+corresponds to \texttt{citet} and (Dirac 1953) corresponds to
+\texttt{citep}.
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-Dirac1953888}{}%
+Dirac, P.A.M. 1953. ``The Lorentz Transformation and Absolute Time.''
+\emph{Physica} 19 (1---12): 888--96.
+\url{https://doi.org/10.1016/S0031-8914(53)80099-6}.
+
+\leavevmode\hypertarget{ref-Feynman1963118}{}%
+Feynman, R.P, and F.L Vernon Jr. 1963. ``The Theory of a General Quantum
+System Interacting with a Linear Dissipative System.'' \emph{Annals of
+Physics} 24: 118--73.
+\url{https://doi.org/10.1016/0003-4916(63)90068-X}.
+
+\end{document}
+
+

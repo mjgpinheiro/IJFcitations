@@ -1,0 +1,64 @@
+---
+title: Title of the paper
+author:
+  - name: Dejian Yu
+    email: yudejian62@126.com
+    affiliation: nau
+    footnote: Corresponding Author
+  - name: Rob J Hyndman
+    email: Rob.Hyndman@monash.edu
+    affiliation: monash
+address:
+  - code: nau
+    address: Nanjing Audit University, China
+  - code: monash
+    address: Department of Econometrics & Business Statistics, Clayton, VIC 3800, Australia
+abstract: |
+  This is the abstract.
+
+  It consists of two paragraphs.
+
+keywords: citations, forecasting
+journal: "International Journal of Forecasting"
+date: "`r Sys.Date()`"
+bibliography: mybibfile.bib
+layout: 11pt,a4paper
+geometry: "margin=1.5cm"
+output: 
+  rticles::elsevier_article:
+    number_sections: true
+    keep_tex: true
+    fig_height: 5
+    fig_width: 8
+    includes:
+      in_header: preamble.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE,
+  dev.args = list(bg = grey(0.9), pointsize = 11)
+)
+# Load any packages here
+library(tidyverse)
+```
+
+# Introduction {#intro}
+
+A sample graph is shown in Figure \ref{fig:graphs}. \newpage
+
+```{r graphs, fig.cap="\\label{fig:graphs}The ubiquitous mtcars data used yet again."}
+# Example of including a graph
+mtcars %>%
+  ggplot(aes(wt, mpg)) +
+    geom_point()
+```
+
+This is the end of Section \ref{intro}.
+
+# Literature review
+
+Here are two sample references: @Feynman1963118 corresponds to `citet` and [@Dirac1953888] corresponds to `citep`.
+
+# References {#references .unnumbered}
+
