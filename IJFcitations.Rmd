@@ -1,24 +1,27 @@
 ---
-title: Title of the paper
+title: A retrospective analysis of International Journal of Forecasting based on bibliometric analysis and knowledge flow analysis
 author:
   - name: Dejian Yu
     email: yudejian62@126.com
     affiliation: nau
-    footnote: Corresponding Author
   - name: Rob J Hyndman
     email: Rob.Hyndman@monash.edu
     affiliation: monash
+  - name: Shunshun Shi
+    email: shishunshun1993@126.com
+    affiliation: zufe
+    footnote: Corresponding Author
 address:
   - code: nau
-    address: Nanjing Audit University, China
+    address: Business School, Nanjing Audit University, Nanjing 211815, China
   - code: monash
     address: Department of Econometrics & Business Statistics, Clayton, VIC 3800, Australia
+  - code: zufe
+    address: Information School, Zhejiang University of Finance and Economics, Hangzhou 310016, China
 abstract: |
-  This is the abstract.
+  As one of the leading journals in the forecasting field, International Journal of Forecasting (IJF) has continually contributed to the field over 30 years. In this study, a retrospective analysis is conducted to evaluate the merits of IJF from 1985 to 2018 based on the raw data harvested from Scopus. The retrospective analysis consists of two parts. One is a bibliometric analysis of IJF based on a science mapping technique which focuses on the level of paper, author and country. A citation network, a co-citation network, a co-author network and a country co-occurrence network are mapped based on IJF's publications. Multiple relationships between different scientific entities can be explored from these networks. The other is a knowledge flow analysis with measures of Interdisciplinary Research (IDR) based on the citing papers (i.e., the papers cite IJF's publications). The discipline distribution of citing papers can be obtained with the citation relationship between IJF's publications and their citing papers. Besides, a dynamic analysis of citing disciplines over time uncovers the changes of knowledge diffusion starting from IJF's publications. A deeper investigation about the knowledge flow outside of the forecasting journals is conducted for better elaborating the performance of IJF in knowledge diffusion outside the forecasting field. These two kinds of analyses directly depict a landscape about the development track of IJF based on the endorsements it obtained and the knowledge it spread abroad.
 
-  It consists of two paragraphs.
-
-keywords: citations, forecasting
+keywords: citations, forecasting, bibliometric, knowledge flow
 journal: "International Journal of Forecasting"
 date: "`r Sys.Date()`"
 bibliography: mybibfile.bib
@@ -32,6 +35,7 @@ output:
     fig_width: 8
     includes:
       in_header: preamble.tex
+    latex_engine: xelatex
 ---
 
 ```{r setup, include=FALSE}
@@ -43,22 +47,59 @@ knitr::opts_chunk$set(
 library(tidyverse)
 ```
 
-# Introduction {#intro}
+\newpage
 
-A sample graph is shown in Figure \ref{fig:graphs}. \newpage
+# Introduction
 
-```{r graphs, fig.cap="\\label{fig:graphs}The ubiquitous mtcars data used yet again."}
-# Example of including a graph
-mtcars %>%
-  ggplot(aes(wt, mpg)) +
-    geom_point()
-```
+(Content to be added)
 
-This is the end of Section \ref{intro}.
+# Bibliometric analysis of IJF
 
-# Literature review
+(Content to be added)
 
-Here are two sample references: @Feynman1963118 corresponds to `citet` and [@Dirac1953888] corresponds to `citep`.
+## Basic statistics of IJF
+
+In this subsection, a basic statistics of IJF about the publications and citations is provided. The analysis about IJF publications focuses on describing how the number of publications changed annually from 1985 to 2018. The analysis about IJF citations focuses on revealing the dynamics of citations that the IJF publications received annually from 1986 to 2019. Note that the number of citations in 2019 is for reference only because the citation window remains nine months left and the citation data will increase over time. Besides, a citation distribution analysis about the IJF publications is conducted. In this citation distribution analysis, IJF publications are partitioned based on the number of citations they received. For example, the publications received citations more 20 but less than 30 are partitioned as the same group. Different groups contain different publications based on the number of citations, and the groups are ranked with an increasing citation order.
+
+## Citation network and co-citation network
+
+In this subsection, we first extract some most highly cited IJF publications with the information about the citation number, author names, publication year, etc. Then a citation network is mapped based on the citation relationship between IJF publications and their citations. A citation network consists of some nodes and links, where some nodes are connected with links and some are isolated. A node represents a publication and a link represents the citation relationship between any two connected publications. The number of citations a publication received is denoted as the size of node. Through this citation network, the citation relationships between any connected publications can be visually obtained and deeper investigations like highly cited publications are cited by what papers can be conducted easily. The co-citation network focuses on the co-citation relationships between IJF publications and their citations. The performance of co-citation network is similar to that of citation network. Based on the co-citation network, the co-citation relationships between any co-cited publications can be identified.
+
+## Authors analysis in IJF and co-author network
+
+In this subsection, we first extract some most prolific authors in IJF. Note that only the first author is considered. Then we set two indicators. One is local citation which means the number of citations received from the IJF publications. The other is global citation which indicates the number of citations received outside the IJF publications. Through the analysis of local citation, the popular authors who are welcomed by IJF authors can be identified, while in the analysis of global citation, the popular authors who are welcomed by authors from various journals can be obtained. Besides, a co-author network is mapped based on the co-author relationship between any connected authors.
+
+## Country analysis and country co-occurrence network
+
+In this subsection, we extract some prolific countries and most attractive countries according to their number of publications and citations. Based on this analysis, we can identify what countries are the biggest providers of IJF and what countries possess the highest authority in IJF. Moreover, a dynamic analysis about the most prolific countries over time can be conducted and the result will be visualized in a world map. Besides, a country co-occurrence network is provided to express the collaboration relationships among different countries.
+
+# Knowledge flow analysis of IJF
+
+(Content to be added)
+
+## Discipline distribution of citing papers
+
+In this subsection, citing papers (i.e., papers cite IJF publications) are selected as the raw data. Statistics about the discipline distribution of citing papers is provided to figure out that what disciplines pay attention to the IJF publications. Also we provide the ranking of highly citing disciplines.
+
+## Dynamic of citing disciplines over time
+
+IJF was set in 1985 and its initial aim was to take a ??multi-disciplinary perspective?? to all types of forecasting methods (Robert, 2006). Under the investigation on hot topics in IJF, Robert argued that the themes had developed over time with the change of dominating application areas, and he agree with Makridakis??s viewpoint (2006) that ??there is a need for the forecasting community to establish a new research agenda based on new approaches to important problems??. Therefore, in this subsection, we focus on the dynamic analysis of citing disciplines over time to delineate the development track of IJF from the angle of what disciplines it has attracted. The publication years of citing papers will be sliced into several pieces to construct a dynamic framework. The citation relationships between IJF publications and their citing papers will be investigated in deep.
+
+### Knowledge diffusion of IJF covering all citing fields
+
+The data contains all citing papers, and the citing papers are grouped based on several time slices. According to the categories predefined by Scopus, we list the all categories where the citing papers belong, and then analyze the results.
+
+### Contrastive analysis of knowledge diffusion between IJF and JF
+
+Journal of Forecasting (JF) is another reputable journal in the field of forecasting, so we conduct a contrastive analysis of knowledge diffusion between IJF and JF to further distinguish their differences in citation relationships based on measures of Interdisciplinary Research. Robert (2006) argued that IJF and JF paid more attention on papers published on these two journals, and after a cross-citation examination, he concluded there was little cross-fertilisation between these two journals and other journals in the fields of business, economics and management (BEM). In this study, we are more inclined to analyze the cross-fertilisation from the angle of category. We explore what categories have been attracted by JIF and JF and what is the differences between the categories attracted by JIF and the categories attracted by JF. In addition, the strength of the citation connection belonging to each category is investigated based on citation relationships.
+
+### Knowledge diffusion of IJF outside the forecasting field
+
+In this subsection, the raw data is limited to the citing papers belonging to the fields which are outside the forecasting field. According to the aim of the International Institute of Forecasters (IIF), IJF and JF are two primary contributing journals in the field of forecasting, so the citing papers published in IJF and JF are excluded in this part of work. Knowledge diffusion starting from the publications of IJF and JF to the publications in the fields which are outside the forecasting field is explored. Journals in the fields of BEM are important venues to publish forecasting application papers, so these journals are the key objectives. Moreover, citing papers from other journals are also under investigation, and we believe valuable information can be found in the non-BEM journals.
+
+# Conclusion and discussion
+
+(Content to be added)
 
 # References {#references .unnumbered}
 
