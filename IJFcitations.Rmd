@@ -1,5 +1,5 @@
 ---
-title: A retrospective analysis of International Journal of Forecasting based on bibliometric analysis and knowledge flow analysis
+title: "International Journal of Forecasting 1985-2018: A retrospective based on bibliometric and knowledge flow analysis"
 author:
   - name: Dejian Yu
     email: yudejian62@126.com
@@ -83,7 +83,7 @@ In this subsection, citing papers (i.e., papers cite IJF publications) are selec
 
 ## Dynamic of citing disciplines over time
 
-IJF was set in 1985 and its initial aim was to take a ??multi-disciplinary perspective?? to all types of forecasting methods (Robert, 2006). Under the investigation on hot topics in IJF, Robert argued that the themes had developed over time with the change of dominating application areas, and he agree with Makridakis??s viewpoint (2006) that ??there is a need for the forecasting community to establish a new research agenda based on new approaches to important problems??. Therefore, in this subsection, we focus on the dynamic analysis of citing disciplines over time to delineate the development track of IJF from the angle of what disciplines it has attracted. The publication years of citing papers will be sliced into several pieces to construct a dynamic framework. The citation relationships between IJF publications and their citing papers will be investigated in deep.
+IJF was set in 1985 and its initial aim was to take a "multi-disciplinary perspective" to all types of forecasting methods (Robert, 2006). Under the investigation on hot topics in IJF, Robert argued that the themes had developed over time with the change of dominating application areas, and he agree with Makridakis's viewpoint (2006) that "there is a need for the forecasting community to establish a new research agenda based on new approaches to important problems". Therefore, in this subsection, we focus on the dynamic analysis of citing disciplines over time to delineate the development track of IJF from the angle of what disciplines it has attracted. The publication years of citing papers will be sliced into several pieces to construct a dynamic framework. The citation relationships between IJF publications and their citing papers will be investigated in deep.
 
 ### Knowledge diffusion of IJF covering all citing fields
 
