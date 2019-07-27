@@ -33,3 +33,721 @@
 \usepackage{makecell}
 \usepackage{geometry}
 \usepackage{indentfirst}
+
+\newcommand{\tablea}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about top 20 most cited IJF papers}
+\setlength{\tabcolsep}{3.5mm}{
+\begin{tabular}{ccccccc}
+\hline
+Rank & Paper & TC & TC/Year & Country & Nau & Nin\\
+\hline
+1 & ZHANG et al. (1998) & 2007 & 95.57 & USA & 3 & 1\\
+2 & HYNDMAN and KOEHLER (2006) & 1198 & 92.15 & Australia & 2 & 2\\
+3 & CLEMEN (1989) & 1105 & 36.83 & USA & 1 & 1\\
+4 & ROWE and WRIGHT (1999) & 941 & 47.05 & UK & 2 & 2\\
+5 & MAKRIDAKIS and HIBON (2000) & 669 & 35.21 & France & 2 & 1\\
+6 & DE GOOIJER and HYNDMAN (2006) & 612 & 47.08 & Netherlands & 2 & 2\\
+7 & ARMSTRONG and COLLOPY (1992) & 573 & 21.22 & USA & 2 & 2\\
+8 & HARVEY et al. (1997) & 564 & 25.64 & UK & 3 & 1\\
+9 & WITT and WITT (1995) & 468 & 19.50 & UK & 2 & 2\\
+10 & THOMAS (2000) & 390 & 20.53 & UK & 1 & 1\\
+11 & MEADE and ISLAM (2006) & 381 & 29.31 & UK & 2 & 2\\
+12 & GARDNER (2006) & 377 & 29.00 & USA & 1 & 1\\
+13 & DIEBOLD and YILMAZ (2012) & 375 & 53.57 & USA & 2 & 3\\
+14 & HOLT (2004) & 372 & 24.80 & USA & 1 & 1\\
+15 & WERON (2014) & 345 & 69.00 & Poland & 1 & 1\\
+16 & HYNDMAN et al. (2002) & 310 & 18.24 & Australia & 4 & 2\\
+17 & CONEJO et al, (2005) & 282 & 20.14 & Spain & 4 & 2\\
+18 & TAYLOR et al., (2006) & 265 & 20.38 & UK & 3 & 3\\
+19 & BROWN (1993) & 221 & 8.50 & USA & 1 & 1\\
+20 & LAWRENCE (2006) & 212 & 16.31 & Australia & 4 & 4\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tableb}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the most local cited IJF papers}
+\setlength{\tabcolsep}{7mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Paper & LC & TC & LC/ TC\\
+\hline
+1 & DE GOOIJER and HYNDMAN (2006) & 33 & 612 & 5.39\%\\
+2 & WERON (2014) & 17 & 345 & 4.93\%\\
+3 & GARDNER (2006) & 16 & 377 & 4.24\%\\
+4 & MAKRIDAKIS and HIBON (2000) & 16 & 669 & 2.39\%\\
+5 & ZHANG et al. (1998) & 12 & 2007 & 0.60\%\\
+6 & CLEMEN (1989) & 11 & 1105 & 1.00\%\\
+7 & CRONE et al. (2011) & 10 & 108 & 9.26\%\\
+8 & TAYLOR et al. (2008) & 10 & 124 & 8.06\%\\
+9 & LAWRENCE et al. (2006) & 10 & 212 & 4.72\%\\
+10 & DARBELLAY and SLAMA (2000) & 10 & 207 & 4.83\%\\
+11 & MAKRIDAKIS (1993) & 10 & 133 & 7.52\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablec}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the most co-cited papers in the co-citation network}
+\setlength{\tabcolsep}{0.3mm}{
+\begin{tabular}{c c c c c c c c c c}
+\hline
+Rank & Co & Paper & Source &    FY &    LY &    Y & best year (number) &    Ave-Co &    Citation\\
+\hline
+1 & 26 & TIMMERMANN (2006) & HEF & 2009 & 2014 & 6 & 2009(9) & 4.33 & 1247\\
+2 & 24 & GIACOMINI and WHITE (2006) & Econometrica & 2007 & 2014 & 8 & 2009/2011/2013(5) & 3.00 & 1231\\
+3 & 22 & MAKRIDAKIS and HIBON (2000) & IJF & 2003 & 2008 & 6 & 2006(7) & 3.67 & 1325\\
+4 & 20 & HANSEN et al. (2011) & Econometrica & 2012 & 2018 & 7 & 2018(7) & 2.86 & 1036\\
+5 & 18 & GIANNONE et al. (2008) & JME & 2013 & 2018 & 6 & 2016(8) & 3.00 & 793\\
+6 & 17 & HYNDMAN and KOEHLER (2006) & IJF & 2009 & 2014 & 6 & 2011(6) & 2.83 & 2338\\
+7 & 16 & ARMSTRONG (2001) & PF: AHRP & 2001 & 2007 & 7 & 2002/2006(6) & 2.28 & 1740\\
+8 & 15 & FILDES et al. (2009) & IJF & 2011 & 2017 & 7 & 2013(7) & 2.14 & 299\\
+9 & 14 & HONG et al. (2016) & IJF & 2016 & 2018 & 3 & 2016(8) & 4.67 & 251\\
+10 & 14 & LAWRENCE (2006) & JACC & 2007 & 2013 & 7 & 2013(6) & 2.00 & 379\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tabled}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the top ten prolific authors in IJF}
+\setlength{\tabcolsep}{2.7mm}{
+\begin{tabular}{ccccccccccc}
+\hline
+Rank & Author & TP & Country & FY & LY & Y & 1st & 1st \% & Cor & Cor \%\\
+\hline
+1 & ARMSTRONG JS & 50 & USA & 1985 & 2014 & 30 & 35 & 70.00\% & 34 & 68.00\%\\
+2 & FILDES R & 42 & UK & 1985 & 2017 & 33 & 31 & 73.81\% & 31 & 73.81\%\\
+3 & FRANSES PH & 26 & Netherlands & 1991 & 2017 & 27 & 12 & 46.15\% & 13 & 50.00\%\\
+4 & HYNDMAN RJ & 24 & Australia & 1992 & 2018 & 27 & 11 & 45.83\% & 13 & 54.17\%\\
+5 & STEKLER HO & 24 & USA & 1988 & 2015 & 28 & 10 & 41.67\% & 12 & 50.00\%\\
+6 & GOODWIN P & 22 & UK & 1993 & 2017 & 25 & 10 & 45.45\% & 13 & 59.09\%\\
+7 & MAKRIDAKIS S & 22 & Cyprus & 1985 & 2018 & 34 & 17 & 77.27\% & 15 & 68.18\%\\
+8 & CLEMENTS MP & 20 & UK & 1997 & 2018 & 22 & 18 & 90.00\% & 11 & 55.00\%\\
+9 & KOEHLER AB & 19 & USA & 1985 & 2017 & 33 & 6 & 31.58\% & 10 & 52.63\%\\
+10 & O'CONNOR M & 18 & Australia & 1989 & 2007 & 19 & 5 & 27.78\% & 7 & 38.89\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablee}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the top ten most cited IJF authors}
+\setlength{\tabcolsep}{4.3mm}{
+\begin{tabular}{ccccccccc}
+\hline
+Rank & Author & TC & TP & TC/TP & LC & \% & OC & \%\\
+\hline
+1 & HYNDMAN RJ & 2547 & 24 & 106.13 & 121 & 4.75\% & 2426 & 95.25\%\\
+2 & ZHANG G & 2075 & 1 & 2075.00 & 27 & 1.30\% & 2048 & 98.70\%\\
+3 & KOEHLER AB & 1728 & 19 & 90.95 & 82 & 4.75\% & 1646 & 95.25\%\\
+4 & ARMSTRONG JS & 1514 & 44 & 34.41 & 149 & 9.84\% & 1365 & 90.16\%\\
+5 & MAKRIDAKIS S & 1338 & 22 & 60.82 & 178 & 13.30\% & 1160 & 86.70\%\\
+6 & WRIGHT G & 1217 & 9 & 135.22 & 47 & 3.86\% & 1170 & 96.14\%\\
+7 & CLEMEN RT & 1182 & 6 & 197.00 & 107 & 9.05\% & 1075 & 90.95\%\\
+8 & HIBON M & 1057 & 11 & 96.09 & 140 & 13.25\% & 917 & 86.75\%\\
+9 & ROWE G & 1027 & 3 & 342.33 & 20 & 1.95\% & 1007 & 98.05\%\\
+10 & DE GOOIJER JG & 770 & 9 & 85.56 & 31 & 4.03\% & 739 & 95.97\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablef}
+{\begin{table}
+\centering
+\caption{Information about the top ten prolific countries}
+\setlength{\tabcolsep}{6mm}{
+\begin{tabular}{cccccccc}
+\hline
+Rank & Country & TP & FY & LY & Y & TP/Y & \% of total\\
+\hline
+1 & USA & 798 & 1985 & 2018 & 34 & 23.47 & 41.18\%\\
+2 & UK & 420 & 1985 & 2018 & 34 & 12.35 & 21.67\%\\
+3 & Australia & 178 & 1985 & 2018 & 34 & 5.24 & 9.18\%\\
+4 & Germany & 110 & 1988 & 2018 & 31 & 3.55 & 5.68\%\\
+5 & Netherlands & 99 & 1988 & 2018 & 31 & 3.19 & 5.11\%\\
+6 & Spain & 93 & 1986 & 2018 & 33 & 2.82 & 4.80\%\\
+7 & Canada & 84 & 1985 & 2018 & 34 & 2.47 & 4.33\%\\
+8 & Italy & 70 & 1987 & 2018 & 32 & 2.19 & 3.61\%\\
+9 & France & 67 & 1986 & 2018 & 33 & 2.03 & 3.46\%\\
+10 & Belgium & 36 & 1989 & 2018 & 30 & 1.20 & 1.86\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tableg}
+{\begin{table}
+\centering
+\caption{Information about the top ten most cited countries}
+\setlength{\tabcolsep}{4mm}{
+\begin{tabular}{ccccccccc}
+\hline
+Rank & Country & TC & TP & TC/TP & In-TC & In\% & Out-TC & Out\%\\
+\hline
+1 & USA & 22875 & 798 & 28.67 & 901 & 3.94\% & 21974 & 96.06\%\\
+2 & UK & 12899 & 420 & 30.71 & 646 & 5.01\% & 12253 & 94.99\%\\
+3 & Australia & 6540 & 178 & 36.74 & 352 & 5.38\% & 6188 & 94.62\%\\
+4 & Netherlands & 2635 & 99 & 26.62 & 150 & 5.69\% & 2485 & 94.31\%\\
+5 & France & 2417 & 67 & 36.07 & 226 & 9.35\% & 2191 & 90.65\%\\
+6 & Germany & 2023 & 110 & 18.39 & 164 & 8.11\% & 1859 & 91.89\%\\
+7 & Spain & 1876 & 93 & 20.17 & 128 & 6.82\% & 1748 & 93.18\%\\
+8 & Canada & 1850 & 84 & 22.02 & 121 & 6.54\% & 1729 & 93.46\%\\
+9 & Italy & 1122 & 70 & 16.03 & 122 & 10.87\% & 1000 & 89.13\%\\
+10 & turkey & 1061 & 33 & 32.15 & 57 & 5.37\% & 1004 & 94.63\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tableh}
+{\begin{table}
+\centering
+\caption{Information about the countries in the country collaboration network}
+\setlength{\tabcolsep}{7mm}{
+\begin{tabular}{cccccc}
+\hline
+Rank & Country & Link & CM & Number & N/L\\
+\hline
+1 & USA & 217 & UK & 44 & 20.28\%\\
+2 & UK & 201 & USA & 44 & 21.89\%\\
+3 & Australia & 116 & US & 42 & 36.21\%\\
+4 & Netherlands & 69 & USA/Belgium & 8 & 11.59\%\\
+5 & Germany & 61 & USA & 14 & 22.95\%\\
+6 & Italy & 57 & UK & 21 & 36.84\%\\
+7 & Canada & 54 & USA & 19 & 35.19\%\\
+8 & France & 49 & UK & 15 & 30.61\%\\
+9 & Spain & 39 & UK & 13 & 33.33\%\\
+10 & Belgium & 34 & Netherlands/UK & 8 & 23.53\%\\
+11 & Denmark & 32 & Netherlands & 7 & 21.88\%\\
+12 & Turkey & 30 & UK & 12 & 40.00\%\\
+13 & Switzerland & 20 & USA & 4 & 20.00\%\\
+14 & Brazil & 19 & UK & 6 & 31.58\%\\
+15 & China & 19 & USA & 9 & 47.37\%\\
+16 & Sweden & 15 & Netherlands & 4 & 26.67\%\\
+17 & Taiwan & 14 & USA & 5 & 35.71\%\\
+18 & Norway & 12 & Italy & 4 & 33.33\%\\
+19 & Greece & 11 & UK & 6 & 54.55\%\\
+20 & New Zealand & 11 & USA & 6 & 54.55\%\\
+21 & South Korea & 11 & USA & 8 & 72.73\%\\
+22 & Austria & 10 & Germany & 5 & 50.00\%\\
+23 & Japan & 10 & USA/Japan & 3 & 30.00\%\\
+24 & Portugal & 8 & Spain/USA & 3 & 37.50\%\\
+25 & Finland & 7 & Sweden/UK/USA & 2 & 28.57\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablei}
+{\begin{table}[!htbp]
+	\centering
+	\caption{Information about the top ten most prolific subject areas}
+	\setlength{\tabcolsep}{1.1mm}{
+	\begin{tabular}{c c c c|c c c c}
+		\hline
+		\multicolumn{4}{c|}{29464 citing papers of IJF} & \multicolumn{4}{c}{16419 citing papers of JF}\\
+		\hline
+		Rank & Subject area & NP1 & Percent1 & Rank & Subject area & NP2 & Percent2\\
+		\hline
+		1 & Computer Science & 7586 & 25.75\% & 1 & \makecell[c]{Economics, Econometrics \\ and Finance} & 5184 & 31.57\%\\
+		2 & \makecell[c]{Economics, Econometrics \\ and Finance} & 7487 & 25.41\% & 2 & \makecell[c]{Business, Management \\ and Accounting} & 4891 & 29.79\%\\
+    3 & \makecell[c]{Business, Management \\ and Accounting} & 7449 & 25.28\% & 3 & Mathematics & 3946 & 24.03\%\\
+    4 & Engineering & 5888 & 19.98\% & 4 & Computer Science & 3791 & 23.09\%\\
+    5 & Mathematics & 5482 & 18.61\% & 5 & Decision Sciences & 2971 & 18.09\%\\
+    6 & Social Sciences & 4277 & 14.52\% & 6 & Engineering & 2305 & 14.04\%\\
+    7 & Decision Sciences & 3665 & 12.44\% & 7 & Social Sciences & 2179 & 13.27\%\\
+    8 & Energy & 2222 & 7.54\% & 8 & Environmental Science & 1109 & 6.75\%\\
+    9 & Environmental Science & 2070 & 7.03\% & 9 & Energy & 641 & 3.90\%\\
+    10 & Earth and Planetary Sciences & 969 & 3.29\% & 10 & Earth and Planetary Sciences & 588 & 3.58\%\\
+		\hline
+	\end{tabular}}
+\end{table}}
+
+\newcommand{\tablej}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the IJF journal citation network in Computer Science }
+\setlength{\tabcolsep}{0.5mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of Forecasting & 1814 & 1464 & 80.71\%\\
+2 & Expert Systems with Applications & 1279 & 553 & 43.24\%\\
+3 & Neurocomputing & 686 & 259 & 37.76\%\\
+4 & European Journal of Operational Research & 647 & 462 & 71.41\%\\
+5 & Lecture Notes in Computer Science & 609 & 444 & 72.91\%\\
+6 & Applied Soft Computing & 446 & 160 & 35.87\%\\
+7 & Decision Support Systems & 345 & 149 & 43.19\%\\
+8 & Computational Statistics and Data Analysis & 341 & 214 & 62.76\%\\
+9 & Neuro Computing and Application & 286 & 99 & 34.62\%\\
+10 & Proceedings of The International Joint Conference on Neural Networks & 260 & 173 & 66.54\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablek}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the IJF journal citation network in Economics, Econometrics and Finance}
+\setlength{\tabcolsep}{4.5mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of business and economic statistics & 1535 & 638 & 41.56\%\\
+2 & Journal of Economics & 1227 & 497 & 40.51\%\\
+3 & Journal of Applied Economics & 908 & 350 & 38.55\%\\
+4 & Applied Economics & 891 & 459 & 51.52\%\\
+5 & Energy Economics & 890 & 454 & 51.01\%\\
+6 & Economic Modeling & 836 & 346 & 41.39\%\\
+7 & Empirical Economics & 656 & 311 & 47.41\%\\
+8 & Oxford Bulletin of Economics and Statistics & 436 & 184 & 42.20\%\\
+9 & International Journal of Production Economics & 423 & 403 & 95.27\%\\
+10 & Journal of Empirical Finance & 336 & 121 & 36.01\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablel}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the IJF journal citation network in Business, Management and Accounting}
+\setlength{\tabcolsep}{3mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of Forecasting & 1891 & 1547 & 81.81\%\\
+2 & Tourism Management & 981 & 219 & 22.32\%\\
+3 & Tourism Economics & 921 & 275 & 29.86\%\\
+4 & International Journal of Production Economics & 785 & 421 & 53.63\%\\
+5 & Journal of Travel Research & 721 & 162 & 22.47\%\\
+6 & Journal of the Operational Research Society & 709 & 387 & 54.58\%\\
+7 & Technological Forecasting and Social Change & 612 & 431 & 70.42\%\\
+8 & Annals of Tourism Research & 591 & 116 & 19.63\%\\
+9 & Organizational Behavior and Human Decision Processes & 412 & 193 & 46.84\%\\
+10 & Omega & 378 & 208 & 55.03\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablem}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the JF journal citation network in Business, Management and Accounting}
+\setlength{\tabcolsep}{3mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of Forecasting & 3391 & 1887 & 55.65\%\\
+2 & Technological Forecasting and Social Change & 411 & 172 & 41.85\%\\
+3 & International Journal of Production Economics & 408 & 113 & 27.70\%\\
+4 & Journal of the Operational Research Society & 351 & 146 & 41.60\%\\
+5 & Tourism Management & 327 & 70 & 21.41\%\\
+6 & Organizational Behavior and Human Decision Processes & 316 & 68 & 21.52\%\\
+7 & Tourism Economics & 309 & 51 & 16.50\%\\
+8 & Omega & 299 & 80 & 26.76\%\\
+9 & Journal of Behavioral Decision Making & 225 & 69 & 30.67\%\\
+10 & Annals of Tourism Research & 213 & 48 & 22.54\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablen}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the JF journal citation network in Economics, Econometrics and Finance}
+\setlength{\tabcolsep}{5mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of Business and Economic Statistics & 1319 & 549 & 41.62\%\\
+2 & Journal of Econometrics & 1104 & 408 & 36.96\%\\
+3 & Journal of Applied Econometrics & 755 & 232 & 30.73\%\\
+4 & Economic Modelling & 615 & 250 & 40.65\%\\
+5 & Energy Economics & 509 & 193 & 37.92\%\\
+6 & Empirical Economics & 502 & 230 & 45.82\%\\
+7 & Applied Economics & 466 & 236 & 50.64\%\\
+8 & Oxford Bulletin of Economics and Statistics & 369 & 142 & 38.48\%\\
+9 & Econometric Reviews & 285 & 100 & 35.09\%\\
+10 & Journal of Empirical Finance & 267 & 93 & 34.83\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tableo}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the JF journal citation network in Mathematics}
+\setlength{\tabcolsep}{4mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of Business and Economic Statistics & 978 & 563 & 57.57\%\\
+2 & Empirical Economics & 405 & 231 & 57.04\%\\
+3 & Journal of Econometrics & 385 & 201 & 52.21\%\\
+4 & European Journal of Operational Research & 327 & 248 & 75.84\%\\
+5 & Computational Statistics and Data Analysis & 301 & 154 & 51.16\%\\
+6 & Journal of the American Statistical Association & 286 & 143 & 50.00\%\\
+7 & Oxford Bulletin of Economics and Statistics & 255 & 144 & 56.47\%\\
+8 & Journal of Applied Statistics & 251 & 176 & 70.12\%\\
+9 & Journal of Time Series Analysis & 205 & 109 & 53.17\%\\
+10 & Studies in Nonlinear Dynamics and Econometrics & 179 & 98 & 54.75\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablep}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the IJF journal citation network in Engineering}
+\setlength{\tabcolsep}{2.2mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Expert Systems with Applications & 797 & 543 & 68.13\%\\
+2 & Energies & 693 & 319 & 46.03\%\\
+3 & Energy & 609 & 262 & 43.02\%\\
+4 & Applied Energy & 595 & 209 & 35.13\%\\
+5 & IEEE Transactions on Power Systems & 553 & 196 & 35.44\%\\
+6 & International Journal of Production Economics & 513 & 403 & 78.56\%\\
+7 & International Journal of Electrical Power and Energy Systems & 287 & 98 & 34.15\%\\
+8 & Transportation Research Part C: Emerging Technologies & 233 & 63 & 27.04\%\\
+9 & Mathematical Problems in Engineering & 203 & 106 & 52.22\%\\
+10 & Electric Power Systems Research & 193 & 57 & 29.53\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tableq}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the IJF journal citation network in Mathematics}
+\setlength{\tabcolsep}{4.6mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of Forecasting & 2317 & 1464 & 63.19\%\\
+2 & Journal of Business and Economic Statistics & 1290 & 638 & 49.46\%\\
+3 & European Journal of Operational Research & 1002 & 757 & 75.55\%\\
+4 & Empirical Economics & 608 & 311 & 51.15\%\\
+5 & Lecture Notes in Computer Science & 525 & 444 & 84.57\%\\
+6 & Journal of Econometrics & 463 & 205 & 44.28\%\\
+7 & Computational Statistics and Data Analysis & 407 & 214 & 52.58\%\\
+8 & Energies & 394 & 319 & 80.96\%\\
+9 & Oxford Bulletin of Economics and Statistics & 363 & 184 & 50.69\%\\
+10 & Journal of the American Statistical Association & 358 & 196 & 54.75\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tabler}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the IJF journal citation network in Social Sciences}
+\setlength{\tabcolsep}{0.8mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Tourism Management & 1016 & 214 & 21.06\%\\
+2 & Journal of Business and Economic Statistics & 1012 & 638 & 63.04\%\\
+3 & Tourism Economics & 932 & 275 & 29.51\%\\
+4 & Journal of Travel Research & 752 & 161 & 21.41\%\\
+5 & Journal of Applied Econometrics & 640 & 350 & 54.69\%\\
+6 & Annals of Tourism Research & 598 & 116 & 19.40\%\\
+7 & Empirical Economics & 514 & 311 & 60.51\%\\
+8 & Oxford Bulletin of Economics and Statistics & 309 & 184 & 59.55\%\\
+9 & Journal of the Royal Statistical Society. series a: statistics in society & 183 & 93 & 50.82\%\\
+10 & International Journal of Tourism Research & 177 & 27 & 15.25\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tables}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the IJF journal citation network in Decision Sciences}
+\setlength{\tabcolsep}{4.5mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of Forecasting & 2161 & 1464 & 67.75\%\\
+2 & European Journal of Operational Research & 1401 & 757 & 54.03\%\\
+3 & Journal of Business and Economic Statistics & 1061 & 638 & 60.13\%\\
+4 & International Journal of Production Economics & 914 & 397 & 43.44\%\\
+5 & Journal of the Operational Research Society & 860 & 369 & 42.91\%\\
+6 & Omega & 413 & 205 & 49.64\%\\
+7 & Journal of Behavioral Decision Making & 306 & 166 & 54.25\%\\
+8 & Journal of the American Statistical Association & 301 & 183 & 60.80\%\\
+9 & Oxford Bulletin of Economics and Statistics & 298 & 181 & 60.74\%\\
+10 & Decision Support Systems & 289 & 149 & 51.56\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablet}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the IJF journal citation network in Energy}
+\setlength{\tabcolsep}{2mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Energies & 967 & 332 & 34.33\%\\
+2 & Energy Economics & 896 & 454 & 50.67\%\\
+3 & Applied Energy & 886 & 209 & 23.59\%\\
+4 & Renewable and Sustainable Energy Reviews & 839 & 183 & 21.81\%\\
+5 & IEEE Transactions on Power Systems & 671 & 196 & 29.21\%\\
+6 & Energy Conversion and Management & 474 & 92 & 19.41\%\\
+7 & Renewable Energy & 374 & 83 & 22.19\%\\
+8 & International Journal of Electrical Power and Energy Systems & 341 & 98 & 28.74\%\\
+9 & Energy Policy & 336 & 128 & 38.10\%\\
+10 & Energy & 311 & 71 & 22.83\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tableu}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the IJF journal citation network in Environmental Science}
+\setlength{\tabcolsep}{6mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Energy & 472 & 286 & 60.59\%\\
+2 & Applied Energy & 339 & 190 & 56.05\%\\
+3 & Energy Policy & 196 & 128 & 65.31\%\\
+4 & Journal of Hydrology & 147 & 72 & 48.98\%\\
+5 & Sustainability & 146 & 107 & 73.29\%\\
+6 & Environmental Modelling and Software & 103 & 58 & 56.31\%\\
+7 & Journal of Cleaner Production & 63 & 45 & 71.43\%\\
+8 & Water Resources Research & 57 & 33 & 57.89\%\\
+9 & Journal of Hydrologic Engineering & 53 & 30 & 56.60\%\\
+10 & Water Resources Management & 50 & 29 & 58.00\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablev}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the IJF journal citation network in Earth and Planetary Sciences}
+\setlength{\tabcolsep}{3.3mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Weather and Forecasting & 119 & 49 & 41.18\%\\
+2 & Monthly Weather Review & 76 & 32 & 42.11\%\\
+3 & Meteorological Applications & 65 & 22 & 33.85\%\\
+4 & Quarterly Journal of the Royal Meteorological Society & 52 & 25 & 48.08\%\\
+5 & Journal of Climate & 48 & 23 & 47.92\%\\
+6 & International Journal of Climatology & 36 & 17 & 47.22\%\\
+7 & Climate Dynamics & 35 & 14 & 40.00\%\\
+8 & Bulletin of the American Meteorological Society & 34 & 12 & 35.29\%\\
+9 & Hydrology and Earth System Sciences & 27 & 14 & 51.85\%\\
+10 & Geographical Analysis & 26 & 25 & 96.15\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablew}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the JF journal citation network in Computer Science}
+\setlength{\tabcolsep}{5.1mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Expert Systems with Applications & 381 & 169 & 44.36\%\\
+2 & Neurocomputing & 266 & 90 & 33.83\%\\
+3 & European Journal of Operational Research & 208 & 136 & 65.38\%\\
+4 & Computational Statistics and Data Analysis & 186 & 154 & 82.80\%\\
+5 & Lecture Notes in Computer Science & 183 & 133 & 72.68\%\\
+6 & Applied Soft Computing Journal & 169 & 58 & 34.32\%\\
+7 & Computers and Operations Research & 161 & 51 & 31.68\%\\
+8 & Decision Support Systems & 148 & 59 & 39.86\%\\
+9 & Knowledge-based Systems & 111 & 50 & 45.05\%\\
+10 & Computational Economics & 109 & 83 & 76.15\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablex}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the JF journal citation network in Decision Science}
+\setlength{\tabcolsep}{4.5mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of Business and Economic Statistics & 759 & 563 & 74.18\%\\
+2 & European Journal of Operational Research & 510 & 248 & 48.63\%\\
+3 & Journal of the Operational Research Society & 284 & 146 & 51.41\%\\
+4 & International Journal of Production Economics & 262 & 113 & 43.13\%\\
+5 & Journal of Applied Statistics & 240 & 176 & 73.33\%\\
+6 & Journal of the American Statistical Association & 238 & 140 & 58.82\%\\
+7 & Oxford Bulletin of Economics and Statistics & 209 & 144 & 68.90\%\\
+8 & Omega & 189 & 80 & 42.33\%\\
+9 & Journal of Time Series Analysis & 157 & 107 & 68.15\%\\
+10 & Decision Support Systems & 150 & 59 & 39.33\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tabley}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the JF journal citation network in Engineering}
+\setlength{\tabcolsep}{2mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Expert Systems with Applications & 210 & 168 & 80.00\%\\
+2 & International Journal of Production Economics & 153 & 115 & 75.16\%\\
+3 & Energy & 85 & 61 & 71.76\%\\
+4 & IEEE Transactions on Power Systems & 56 & 37 & 66.07\%\\
+5 & International Journal of Production Research & 46 & 26 & 56.52\%\\
+6 & Applied Energy & 45 & 28 & 62.22\%\\
+7 & Information Sciences & 37 & 26 & 70.27\%\\
+8 & Risk Analysis & 28 & 23 & 82.14\%\\
+9 & International Journal of Electrical Power and Energy Systems & 27 & 9 & 33.33\%\\
+10 & Quality and Reliability Engineering International & 23 & 20 & 86.96\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablez}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the JF journal citation network in Social Sciences}
+\setlength{\tabcolsep}{4.3mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of Business and Economic Statistics & 907 & 549 & 60.53\%\\
+2 & Journal of Applied Econometrics & 482 & 232 & 48.13\%\\
+3 & Empirical Economics & 403 & 230 & 57.07\%\\
+4 & Tourism Management & 261 & 70 & 26.82\%\\
+5 & Oxford Bulletin of Economics and Statistics & 259 & 142 & 54.83\%\\
+6 & Tourism Economics & 216 & 51 & 23.61\%\\
+7 & Annals of Tourism Research & 183 & 48 & 26.23\%\\
+8 & Journal of Travel Research & 159 & 35 & 22.01\%\\
+9 & Studies in Nonlinear Dynamics and econometrics & 158 & 98 & 62.03\%\\
+10 & Review of Economics and Statistics & 128 & 69 & 53.91\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablezz}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the JF journal citation network in Environmental Science}
+\setlength{\tabcolsep}{2.8mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Journal of Hydrology & 189 & 56 & 29.63\%\\
+2 & Water Resources Research & 175 & 53 & 30.29\%\\
+3 & Hydrological Processes & 122 & 30 & 24.59\%\\
+4 & Environmental Modelling and Software & 118 & 50 & 42.37\%\\
+5 & Energy & 89 & 71 & 79.78\%\\
+6 & Hydrology and Earth System Sciences & 60 & 19 & 31.67\%\\
+7 & Stochastic Environmental Research and Risk Assessment & 57 & 20 & 35.09\%\\
+8 & Energy Policy & 52 & 40 & 76.92\%\\
+9 & Journal of Hydrologic Engineering & 44 & 16 & 36.36\%\\
+10 & Hydrological Sciences Journal & 43 & 10 & 23.26\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablezzz}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the JF journal citation network in Energy}
+\setlength{\tabcolsep}{5.1mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & Energy Economics & 324 & 193 & 59.57\%\\
+2 & IEEE Transactions on Power Systems & 99 & 37 & 37.37\%\\
+3 & Energies & 87 & 30 & 34.48\%\\
+4 & Energy Policy & 75 & 40 & 53.33\%\\
+5 & Applied Energy & 65 & 28 & 43.08\%\\
+6 & Energy & 63 & 19 & 30.16\%\\
+7 & Renewable and Sustainable Energy Reviews & 63 & 19 & 30.16\%\\
+8 & Energy Journal & 46 & 14 & 30.43\%\\
+9 & Sustainability & 42 & 32 & 76.19\%\\
+10 & Wind Energy & 39 & 15 & 38.46\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablezzzz}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the JF journal citation network in Earth and Planetary Sciences}
+\setlength{\tabcolsep}{3.4mm}{
+\begin{tabular}{ccccc}
+\hline
+Rank & Journal & Links & Links with IJF & \%\\
+\hline
+1 & International Journal of Climatology & 198 & 37 & 18.69\%\\
+2 & Journal of Climate & 177 & 27 & 15.25\%\\
+3 & Climate Dynamics & 142 & 22 & 15.49\%\\
+4 & Quarterly Journal of the Royal Meteorological Society & 118 & 15 & 12.71\%\\
+5 & Geophysical Research Letters & 70 & 11 & 15.71\%\\
+6 & Theoretical and Applied Climatology & 49 & 14 & 28.57\%\\
+7 & Climatic Change & 37 & 26 & 70.27\%\\
+8 & Journal of Geophysical Research Atmospheres & 28 & 11 & 39.29\%\\
+9 & Journal of Applied Meteorology and Climatology & 27 & 8 & 29.63\%\\
+10 & Monthly Weather Review & 27 & 7 & 25.93\%\\
+\hline
+\end{tabular}}
+\end{table}}
+
+\newcommand{\tablezzzzz}
+{\begin{table}[!htbp]
+\centering
+\caption{Information about the papers with the strongest power in the burst detection}
+\setlength{\tabcolsep}{1.5mm}{
+\begin{tabular}{cccc}
+\hline
+References & Strength & Begin & End\\
+\hline
+MAKRIDAKIS S, 2000, International Journal of Forecasting, V16, P451-476 & 10.3456 & 2003 & 2008\\
+TIMMERMANN A, 2006, Book & 9.4891 & 2009 & 2014\\
+ARMSTRONG JS, 2001, Book & 7.7619 & 2002 & 2007\\
+GIACOMINI R, 2006, Econometrica, V74, P1545-1578 & 7.4779 & 2008 & 2014\\
+HYNDMAN RJ, 2006, International Journal of Forecasting, V22, P679-688 & 6.1442 & 2009 & 2014\\
+HANSEN PR, 2011, Econometrica, V79, P291-311 & 6.1267 & 2016 & 2018\\
+CLARK TE, 2007, Journal of Econometrics, V138, P291-311 & 6.0076 & 2013 & 2015\\
+GIANNONE D, 2008, Journal of Monetary Economics, V55, P665-676 & 5.9896 & 2013 & 2016\\
+HONG T, 2016, International Journal of Forecasting, V32, P896-913 & 5.7396 & 2016 & 2018\\
+HYNDMAN RJ, 2002, International Journal of Forecasting, V18, V18, P439-454 & 5.7064 & 2006 & 2008\\
+\hline
+\end{tabular}}
+\end{table}}
